@@ -1,8 +1,10 @@
 ---
+tags:
+  - AI
 draft: false
 ---
 - **수정 내역**
-	- **최초 작성**: 2학년 여름학기 PyTorch DL
+	- **최초 작성**: 250624 PyTorch DL
 
 ## 1. CNN이란?
 - FCN(Fully Connected Network)는 데이터 형상이 무시되는 문제점이 있음
