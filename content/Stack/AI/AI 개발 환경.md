@@ -100,9 +100,7 @@ conda install pandas tqdm sklearn scipy xgboost joblib transformers
 - git & github
 
 ### 4.2. 협업
-- [Notion Workspace](https://sj92.notion.site/summary-and-quiz)
-
-- **노션(Notion)의 주요 장점**
+- **Notion의 주요 장점**
 	- 올인원 작업 공간
 	- 실시간 협업 가능
 	- 유연한 문서 구조
