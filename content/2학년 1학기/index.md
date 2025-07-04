@@ -1,7 +1,7 @@
 ---
 title: 2학년 1학기
-​tags:
+tags:
   - 2-1
 draft: false
 ---
-index test
+- (index test)
