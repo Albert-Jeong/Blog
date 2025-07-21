@@ -17,7 +17,7 @@ draft: false
 
 ## 2. 소프트웨어 환경
 ### 2.1. 가상 환경
-- **Miniconda**: 패키지 관리 및 환경 관리를 위한 오픈 소스 툴
+- ==Miniconda==: 패키지 관리 및 환경 관리를 위한 오픈 소스 툴
 
 - **가상 환경의 중요성**
 	- 의존성 충돌 방지
@@ -94,6 +94,8 @@ conda install pandas tqdm sklearn scipy xgboost joblib transformers
 - **통합 개발 환경**(IDE)
 	- Jupyter Notebook
 	- Visual Studio Code
+
+- Sublime Text
 
 ## 4. 버전 관리 및 협업
 ### 4.1. 버전 관리
