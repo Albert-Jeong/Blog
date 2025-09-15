@@ -71,20 +71,6 @@ conda update pandas
 	- **GPU 가속 지원**: NVIDIA CUDA 지원을 통해 빠른 연산을 수행
 	- **풍부한 생태계**: 다양한 오픈소스 라이브러리(TorchVision, TorchText, TorchAudio)
 
-### 2.3. 호환성
-- **250701 디지털 경진대회**
-	- PyTorch Stable 2.7.1 (`pip3`)
-	- CUDA 12.8 ([다운로드](https://developer.nvidia.com/cuda-12-8-0-download-archive))
-	- Python 3.12 (`conda`)
-
-```shell
-conda create -n torch271 python=3.12
-conda activate torch271
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
-
-conda install pandas tqdm sklearn scipy xgboost joblib transformers
-```
-
 ## 3. 개발 도구
 - **통합 개발 환경**(IDE)
 	- Jupyter Notebook
