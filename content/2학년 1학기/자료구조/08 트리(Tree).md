@@ -115,7 +115,7 @@ void levelorder(TNode* root) {
 
 - ==완전 이진 트리==(Complete Binary Tree)
 	- 레벨 1부터 k-1까지는 노드가 모두 차 있고, 레벨 k는 노드가 왼쪽부터 차례로 차 있는 이진 트리
-	- 예: Heap
+	- e.g. Heap
 
 - **포화 이진 트리**(Full Binary Tree)
 	- 모든 레벨에 노드가 꽉 차있는 이진 트리
