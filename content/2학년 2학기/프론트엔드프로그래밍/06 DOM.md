@@ -29,13 +29,10 @@ date: 2025-10-08
 > DOM 객체(노드)는 HTML 요소의 특성을 반영하며 다음 5가지를 포함한다.
 
 1. **프로퍼티 (Property)**: HTML 태그의 속성(attribute)을 반영하는 멤버 변수 (예: `id`, `tagName`)
-2. **메소드 (Method)**: 태그를 제어하는 멤버 함수
+2. **메서드 (Method)**: 태그를 제어하는 멤버 함수
 3. **컬렉션 (Collection)**: 자식 객체들의 주소를 가지는 배열과 유사한 집합적 정보
 4. **이벤트 리스너 (Event Listener)**: `onclick` 등 약 70여 개의 이벤트 처리기
 5. **CSS3 스타일 (Style)**: CSS 스타일 시트 정보를 반영하여 모양을 제어 (`style` 프로퍼티)
-
-- *DOM 객체의 구성 요소 출력 예제*
-`<iframe width="500" height="500" src="https://codepen.io/albert-jeong/pen/QwyqJxR"></iframe>`
 
 ## 3. HTML 요소 찾기
 > 동적인 페이지 작성을 위해 요소를 찾는 다양한 방법을 제공한다.
@@ -45,8 +42,6 @@ date: 2025-10-08
 	- `document.getElementsByTagName("tag")`: 태그 이름으로 찾기 (배열 반환)
 	- `document.getElementsByClassName("menu")`: 클래스 이름으로 찾기
 	- `document.querySelectorAll("selector")`: CSS 선택자로 찾기 (배열 반환)
-
-`<iframe width="500" height="500" src="https://codepen.io/albert-jeong/pen/ZYQXmZW"></iframe>`
 
 - **DOM 트리 순회 (관계 이용)**
 	- `childNodes`: 모든 자식 요소 배열
@@ -95,8 +90,6 @@ function getValueL() {
 }
 ```
 
-`<iframe width="700" height="700" src="https://codepen.io/albert-jeong/pen/MYKEZaj"></iframe>`
-
 ## 5. HTML 요소 변경하기
 > DOM을 통해 요소의 내용, 속성, 스타일을 변경할 수 있다.
 
@@ -112,8 +105,6 @@ function getValueL() {
 	-  `style` 객체의 프로퍼티 변경
 	- (예: `.style.color = "red"`, `.style.visibility = "hidden"`)
 	- 활용 예: 다크 모드/라이트 모드 토글
-
-`<iframe width="700" height="700" src="https://codepen.io/albert-jeong/pen/PwZmdMO"></iframe>`
 
 ## 6. DOM 노드 삭제와 추가
 > `document` 객체의 메서드를 사용하여 DOM 트리를 조작한다.

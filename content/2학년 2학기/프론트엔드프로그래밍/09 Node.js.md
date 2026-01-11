@@ -39,7 +39,7 @@ process.argv.forEach(function (item, index) {
 ## 2. Node.js 프로젝트
 - **NPM**(Node Package Manager)
 	- Node.js 패키지 관리자
-	- [중앙 저장소](npmjs.com)
+	- [중앙 저장소](https://npmjs.com)
 
 - `npm init` 명령어 (또는 `npm create`)
 	- Node.js 프로젝트를 초기화하는 명령어

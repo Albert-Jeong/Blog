@@ -77,6 +77,7 @@ date: 2025-12-02
 ```sh
 git reset --soft HEAD~3
 git commit -m update
+git commit --allow-empty-message -m "" # 메시지가 없는 빈 커밋
 git push origin main --force
 ```
 

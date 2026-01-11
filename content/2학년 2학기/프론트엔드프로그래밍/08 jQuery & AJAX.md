@@ -108,7 +108,7 @@ $(selector).action();
 	</script>
 </head>
 <body>
-	<button>메소드 체이닝</button>
+	<button>메서드 체이닝</button>
 	<img id="cat" src="https://i.pinimg.com/736x/6f/7f/0b/6f7f0bbccc81c01b7f242b877c6fda6a.jpg" alt="" width="120" height="100" style="display: none"/>
 </body>
 </html>

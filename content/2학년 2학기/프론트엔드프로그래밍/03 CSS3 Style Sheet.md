@@ -126,7 +126,6 @@ div > p		/* 자식 선택자 */
 	- `relative`: 원래 위치 기준 상대적 이동
 	- `absolute`: 가장 가까운 포지셔닝된 조상 기준 절대적 배치
 	- `fixed`: 뷰포트(브라우저 창) 기준 고정
-	- cf. [CodePen](https://codepen.io/albert-jeong/pen/qEboQvW)
 
 ### 6.3. 시멘틱 요소
 - **시멘틱 요소**
