@@ -5,27 +5,13 @@ date: 2025-07-04
 ---
 * [github-actions](https://jyheo.github.io/github-lecture/github-actions.html)
 
-## 1. CI/CD 개요
-- **CI** (Continuous Integration) - 지속적 통합
-	- 지속적으로 퀄리티 컨트롤을 적용하는 프로세스
-	- 기존 통합 방식의 문제점인 통합의 지옥 해결
-	- 자주 통합하여 코드 충돌 방지
-
-- **CD** (Continuous Delivery) - 지속적 배포
-	- 빌드, 테스트뿐만 아니라 배포까지 자동화
-	- ==DevOps의 기반 플랫폼==
-
-- **CI/CD 도구**
-	- **클라우드**: GitHub Actions, Travis-CI
-	- **설치형**: Jenkins
-
-## 2. GitHub Actions 기본 개념
+## 1. GitHub Actions 기본 개념
 - **GitHub Actions란?**
 	- GitHub에서 제공하는 CI/CD 플랫폼
 	- 빌드, 테스트, 배포를 자동화하는 workflow 생성
 	- 다양한 운영체제 지원 (Linux, Windows, macOS)
 
-### 2.1. 핵심 구성 요소
+### 1.1. 핵심 구성 요소
 **1) Workflows**
 - YAML 형식으로 작성
 - `.github/workflows` 디렉토리에 저장
@@ -52,7 +38,7 @@ date: 2025-07-04
 - GitHub 제공 가상 머신 또는 자체 호스팅 시스템 사용
 - 각 runner는 한 번에 하나의 job 실행
 
-## 3. 간단한 Workflow 예제
+## 2. 간단한 Workflow 예제
 - **learn-github-actions.yml**
 ```yaml
 name: learn-github-actions
@@ -80,7 +66,7 @@ jobs:
 	- **uses**: 사전 정의된 액션 사용
 	- **run**: 명령어 수행
 
-## 4. Starter Workflow
+## 3. Starter Workflow
 - **C/C++ with Make 템플릿 예제**
 ```yml
 name: C/C++ CI
@@ -100,13 +86,13 @@ jobs:
       run: make check
 ```
 
-## 5. 고급 기능
-### 5.1. Uses Actions
+## 4. 고급 기능
+### 4.1. Uses Actions
 - **GitHub Marketplace**: `{owner}/{repo}@{ref}` 형식
 - **로컬 action**: `./.github/actions/hello-action`
 - **Docker Hub**: 공개 도커 이미지
 
-### 5.2. Artifacts (파일 공유)
+### 4.2. Artifacts (파일 공유)
 ```yml
 jobs:
   upload-job:
@@ -125,7 +111,7 @@ jobs:
       - run: cat output.log
 ```
 
-### 5.3. 환경 변수
+### 4.3. 환경 변수
 ```yml
 env:
   DAY_OF_WEEK: Monday    # workflow 수준
@@ -139,7 +125,7 @@ jobs:
           First_Name: Mona  # step 수준
 ```
 
-### 5.4. Expression
+### 4.4. Expression
 - 문법: `${{ expression }}`
 - 조건부 실행, 변수 지정에 사용
 
@@ -150,7 +136,7 @@ jobs:
     MY_ENV_VAR: ${{ 1+1 }}
 ```
 
-### 5.5. Context
+### 4.5. Context
 - **github**: workflow 실행 정보
     - `github.actor`: 실행자
     - `github.ref`: 브랜치/태그
@@ -159,7 +145,7 @@ jobs:
 - **steps**: step 정보
 - **runner**: runner 정보 (OS 등)
 
-## 6. Workflow 트리거 상세
+## 5. Workflow 트리거 상세
 - **기본 트리거**
 	- `on: push`
 	- `on: pull_request`
@@ -181,7 +167,7 @@ on:
       - '!releases/**-alpha'
 ```
 
-## 7. Reusable Workflow
+## 6. Reusable Workflow
 - **reusable-workflow.yml** (재사용 가능한 workflow)
 ```yml
 on:
@@ -215,7 +201,7 @@ jobs:
       - run: echo ${{ needs.job1.outputs.output1 }}
 ```
 
-## 8. Cache Dependency
+## 7. Cache Dependency
 - **기본 캐싱**
 ```yml
 - uses: actions/cache@v3
@@ -231,7 +217,7 @@ jobs:
 	- **Node**: `setup-node` with `cache: 'npm'`
 	- **Java**: `setup-java` with `cache: 'gradle'`
 
-## 9. Jobs 활용
+## 8. Jobs 활용
 - **순차 실행**
 ```yml
 jobs:
@@ -260,7 +246,7 @@ jobs:
     runs-on: ${{ matrix.os }}
 ```
 
-## 10. 실습 예제
+## 9. 실습 예제
 - **Python 프로젝트**
 	- `str_util.py`, `test_str_util.py` 작성
 	- `requirements.txt`에 numpy 추가
